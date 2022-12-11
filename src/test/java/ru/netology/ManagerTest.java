@@ -19,6 +19,7 @@ public class ManagerTest {
     Movie tenth = new Movie(10, "Калифорникейшн", "Комедия", false);
 
 
+
     @Test
     void shouldShowTenMovies() {
 
@@ -76,28 +77,9 @@ public class ManagerTest {
         assertArrayEquals(expected, afisha.showMovies());
     }
 
-    @Test
-    void shouldShowMoviesBelowTenCurrentMoviesLenght() {
 
-        AfishaManager afisha = new AfishaManager();
-
-        afisha.add(first);
-        afisha.add(second);
-        afisha.add(third);
-        afisha.add(fourth);
-        afisha.add(fifth);
-        afisha.add(sixth);
-        afisha.add(seventh);
-        afisha.add(eighth);
-        afisha.add(ninth);
-        afisha.add(tenth);
-
-        Movie[] expected = new Movie[]{
-                tenth, ninth, eighth, seventh, sixth, fifth};
-
-        assertArrayEquals(expected, afisha.showMovies());
     }
-}
+
 
 
 

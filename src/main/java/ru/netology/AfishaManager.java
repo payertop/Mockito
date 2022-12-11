@@ -12,11 +12,7 @@ public class AfishaManager {
     }
 
     {
-        limit = 10;
-    }
 
-    public AfishaManager(int limit) {
-        this.limit = limit;
     }
 
 
@@ -42,23 +38,23 @@ public class AfishaManager {
         return result;
 
     }
-
     public Movie[] findAll() {
         return movies;
     }
 
-    public String[] findLast() {
+    public Movie[] findLast() {
         int length;
         if (movies.length < 10) {
             length = movies.length;
         } else {
             length = 10;
         }
-        String[] tmp = new String[length];
+        Movie[] tmp = new Movie[length];
         for (int i = 0; i < tmp.length; i++) {
-            tmp[i] = String.valueOf(movies[movies.length - 1 - i]);
+            tmp[i] = movies[movies.length - 1 - i];
 
         }
         return tmp;
     }
 }
+
