@@ -79,7 +79,7 @@ public class ManagerTest {
     @Test
     void shouldShowMoviesBelowTenCurrentMoviesLenght() {
 
-        AfishaManager afisha = new AfishaManager(6);
+        AfishaManager afisha = new AfishaManager();
 
         afisha.add(first);
         afisha.add(second);
